@@ -1,4 +1,64 @@
-'''syntax: libpcap -t <interface>
+syntax: libpcap -t <interface>
 sample: pcap-test -t eth0
 syntax: libpcap -f <pcap file>
-sample: pcap-test -f smtp.pcap'''
+sample: pcap-test -f smtp.pcap
+
+Interface:
+        eth0
+        lo
+        Pseudo-device that captures on all interfaces
+        Bluetooth Linux Monitor
+        Linux netfilter log (NFLOG) interface
+        Linux netfilter queue (NFQUEUE) interface
+        D-Bus system bus
+        D-Bus session bus
+        Bluetooth adapter number 0
+
+syntax: libpcap -t <interface>
+sample: pcap-test -t eth0
+syntax: libpcap -f <pcap file>
+sample: pcap-test -f smtp.pcap
+
+Src MAC: 00:1b:2f:03:9e:c2 (0x0800)
+Dst MAC: 08:00:46:db:60:8f
+Src: 217.12.11.66:587
+Dest: 192.168.1.4:3326
+Packet # 43
+Packet size: 86 bytes
+Epoch Time: 1184401900:881605 seconds
+<TCP Payload>
+0x0000 02 4b 0c fe d4 f0 3a ca 3a d7 b4 c0 50 18 ff ff
+<Payload>
+221 smtp001.mail.xxx.xxxxx.com
+
+
+Src MAC: 08:00:46:db:60:8f (0x0800)
+Dst MAC: 00:1b:2f:03:9e:c2
+Src: 192.168.1.4:3326
+Dest: 217.12.11.66:587
+Packet # 44
+Packet size: 54 bytes
+Epoch Time: 1184401900:881653 seconds
+<TCP Payload>
+0x0000 0c fe 02 4b 3a d7 b4 c1 d4 f0 3a ea 50 14 00 00
+
+Src MAC: 00:1b:2f:03:9e:c2 (0x0800)
+Dst MAC: 08:00:46:db:60:8f
+Src: 217.12.11.66:587
+Dest: 192.168.1.4:3326
+Packet # 45
+Packet size: 60 bytes
+Epoch Time: 1184401900:881751 seconds
+<TCP Payload>
+0x0000 02 4b 0c fe d4 f0 3a ea 3a d7 b4 c0 50 11 ff ff
+
+Src MAC: 08:00:46:db:60:8f (0x0800)
+Dst MAC: 00:1b:2f:03:9e:c2
+Src: 192.168.1.4:3326
+Dest: 217.12.11.66:587
+Packet # 46
+Packet size: 54 bytes
+Epoch Time: 1184401900:881774 seconds
+<TCP Payload>
+0x0000 0c fe 02 4b 3a d7 b4 c0 3a d7 b4 c0 50 04 00 00
+
